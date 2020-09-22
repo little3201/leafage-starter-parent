@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.2.1.RELEASE</version>
+        <version>2.3.2.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -19,8 +19,8 @@
 
     <properties>
         <java.version>11</java.version>
-        <spring-cloud.version>Hoxton.RELEASE</spring-cloud.version>
-        <abeille-common.version>0.0.1-SNAPSHOT</abeille-common.version>
+        <spring-cloud.version>Hoxton.SR7</spring-cloud.version>
+        <rocketmq-client.version>4.7.0</rocketmq-client.version>
     </properties>
 
     <developers>
@@ -40,11 +40,12 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!-- Abeille common -->
             <dependency>
-                <groupId>top.abeille.common</groupId>
-                <artifactId>abeille-common</artifactId>
-                <version>${abeille-common.version}</version>
+                <groupId>org.apache.rocketmq</groupId>
+                <artifactId>rocketmq-client</artifactId>
+                <version>${rocketmq-client.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
