@@ -9,13 +9,13 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>top.abeille</groupId>
-    <artifactId>abeille-start-parent</artifactId>
+    <groupId>io.leafage</groupId>
+    <artifactId>leafage-starter-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>abeille-start-parent</name>
-    <description>pom dependencies control of abeille</description>
+    <name>leafage-starter-parent</name>
+    <description>pom dependencies control of leafage</description>
 
     <properties>
         <java.version>11</java.version>
