@@ -1,5 +1,5 @@
 # leafage-starter-parent
-项目依赖版本pom
+项目依赖版本pom（已发布到maven repository）
 
 ### 介绍：
 
