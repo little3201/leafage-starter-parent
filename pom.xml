@@ -5,13 +5,13 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.0</version>
+        <version>3.0.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <groupId>top.leafage</groupId>
     <artifactId>leafage-starter-parent</artifactId>
-    <version>0.1.6</version>
+    <version>0.2.0</version>
     <packaging>pom</packaging>
 
     <name>leafage-starter-parent</name>
@@ -25,13 +25,13 @@
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
         <sonar.language>java</sonar.language>
 
-        <spring-cloud.version>2021.0.3</spring-cloud.version>
+        <spring-cloud.version>2022.0.0</spring-cloud.version>
 
         <!-- Plugins -->
-        <maven-javadoc-plugin.version>3.4.0</maven-javadoc-plugin.version>
+        <maven-javadoc-plugin.version>3.4.1</maven-javadoc-plugin.version>
         <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
         <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
-        <maven-jxr-plugin.version>3.2.0</maven-jxr-plugin.version>
+        <maven-jxr-plugin.version>3.3.0</maven-jxr-plugin.version>
 
         <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
         <javadoc.failOnError>false</javadoc.failOnError>
