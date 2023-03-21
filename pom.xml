@@ -38,6 +38,7 @@
         <javadoc.failOnWarnings>false</javadoc.failOnWarnings>
         <jacoco-maven-plugin.version>0.8.8</jacoco-maven-plugin.version>
         <poi-ooxml.version>5.2.3</poi-ooxml.version>
+        <jakarta.validation-api.version>3.0.2</jakarta.validation-api.version>
     </properties>
 
     <dependencyManagement>
@@ -53,6 +54,11 @@
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi-ooxml</artifactId>
                 <version>${poi-ooxml.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.validation</groupId>
+                <artifactId>jakarta.validation-api</artifactId>
+                <version>${jakarta.validation-api.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
