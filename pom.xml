@@ -5,38 +5,38 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.0.5</version>
+        <version>3.2.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <groupId>top.leafage</groupId>
     <artifactId>leafage-starter-parent</artifactId>
-    <version>0.2.2</version>
+    <version>0.3.0</version>
     <packaging>pom</packaging>
 
     <name>leafage-starter-parent</name>
     <description>pom dependencies control of leafage</description>
 
     <properties>
-        <java.version>17</java.version>
+        <java.version>21</java.version>
 
         <!-- Sonar -->
         <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
         <sonar.language>java</sonar.language>
 
-        <spring-cloud.version>2022.0.2</spring-cloud.version>
+        <spring-cloud.version>2023.0.0</spring-cloud.version>
 
         <!-- Plugins -->
-        <maven-javadoc-plugin.version>3.4.1</maven-javadoc-plugin.version>
-        <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
-        <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
+        <maven-javadoc-plugin.version>3.6.3</maven-javadoc-plugin.version>
+        <maven-source-plugin.version>3.3.0</maven-source-plugin.version>
+        <maven-gpg-plugin.version>3.1.0</maven-gpg-plugin.version>
 
         <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
         <javadoc.failOnError>false</javadoc.failOnError>
         <javadoc.failOnWarnings>false</javadoc.failOnWarnings>
-        <jacoco-maven-plugin.version>0.8.8</jacoco-maven-plugin.version>
-        <poi-ooxml.version>5.2.3</poi-ooxml.version>
+        <jacoco-maven-plugin.version>0.8.11</jacoco-maven-plugin.version>
+        <poi-ooxml.version>5.2.5</poi-ooxml.version>
         <jakarta.validation-api.version>3.0.2</jakarta.validation-api.version>
     </properties>
 
@@ -67,7 +67,7 @@
             <name>The Apache Software License, Version 2.0</name>
             <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
             <comments>
-                Copyright 2018-2023 the original author or authors.
+                Copyright 2018-2024 the original author or authors.
 
                 Licensed under the Apache License, Version 2.0 (the "License");
                 you may not use this file except in compliance with the License.
