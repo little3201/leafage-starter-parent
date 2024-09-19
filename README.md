@@ -1,8 +1,8 @@
 # leafage-starter-parent
 
 <p align="center">
- <img src="https://img.shields.io/badge/Spring%20Cloud-2023.0.0-green.svg" alt="Coverage Status">
- <img src="https://img.shields.io/badge/Spring%20Boot-3.2.1-green.svg" alt="Downloads">
+ <img src="https://img.shields.io/badge/Spring%20Cloud-2023.0.3-green.svg" alt="Coverage Status">
+ <img src="https://img.shields.io/badge/Spring%20Boot-3.2.7-green.svg" alt="Downloads">
 </p>
 
 项目依赖版本pom（已发布到maven repository）
