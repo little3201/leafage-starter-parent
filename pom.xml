@@ -176,9 +176,6 @@
     <profiles>
         <profile>
             <id>coverage</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
             <build>
                 <plugins>
                     <plugin>
@@ -190,6 +187,17 @@
                                 <goals>
                                     <goal>prepare-agent</goal>
                                 </goals>
+                            </execution>
+                            <execution>
+                                <id>report</id>
+                                <goals>
+                                    <goal>report</goal>
+                                </goals>
+                                <configuration>
+                                    <formats>
+                                        <format>XML</format>
+                                    </formats>
+                                </configuration>
                             </execution>
                         </executions>
                     </plugin>
