@@ -1,7 +1,7 @@
 # leafage-starter-parent
 
 <p align="center">
- <img src="https://img.shields.io/badge/Spring%20Boot-3.3.4-green.svg" alt="Downloads">
+ <img src="https://img.shields.io/badge/Spring%20Boot-3.4.0-green.svg" alt="Downloads">
 </p>
 
 项目依赖版本pom（已发布到maven repository）
