@@ -65,7 +65,12 @@
         <dependencies>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-gateway</artifactId>
+                <artifactId>spring-cloud-starter-gateway-server-webmvc</artifactId>
+                <version>${spring-cloud-gateway.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-gateway-server-weflux</artifactId>
                 <version>${spring-cloud-gateway.version}</version>
             </dependency>
             <dependency>
