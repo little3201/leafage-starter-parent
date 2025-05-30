@@ -22,13 +22,13 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.4.0</version>
+        <version>3.5.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <groupId>top.leafage</groupId>
     <artifactId>leafage-starter-parent</artifactId>
-    <version>0.3.3</version>
+    <version>0.3.4</version>
     <packaging>pom</packaging>
     <url>https://www.leafage.top</url>
 
@@ -57,8 +57,8 @@
         <jacoco-maven-plugin.version>0.8.12</jacoco-maven-plugin.version>
         <sonar-maven-plugin.version>5.0.0.4389</sonar-maven-plugin.version>
 
-        <spring-cloud-gateway.version>4.2.0</spring-cloud-gateway.version>
-        <poi-ooxml.version>5.3.0</poi-ooxml.version>
+        <spring-cloud-gateway.version>4.3.0</spring-cloud-gateway.version>
+        <poi-ooxml.version>5.4.1</poi-ooxml.version>
     </properties>
 
     <dependencyManagement>
