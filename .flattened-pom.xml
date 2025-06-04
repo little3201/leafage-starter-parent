@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  ~  Copyright 2018-2024 little3201.
+  ~  Copyright 2018-2025 little3201.
   ~
   ~  Licensed under the Apache License, Version 2.0 (the "License");
   ~  you may not use this file except in compliance with the License.
@@ -21,12 +21,12 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>3.4.0</version>
+    <version>3.5.0</version>
     <relativePath></relativePath>
   </parent>
   <groupId>top.leafage</groupId>
   <artifactId>leafage-starter-parent</artifactId>
-  <version>0.3.3</version>
+  <version>0.3.4</version>
   <packaging>pom</packaging>
   <name>leafage-starter-parent</name>
   <description>pom dependencies control of leafage</description>
@@ -80,20 +80,25 @@
     <maven-gpg-plugin.version>3.2.7</maven-gpg-plugin.version>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <flatten-maven-plugin.version>1.6.0</flatten-maven-plugin.version>
-    <spring-cloud-gateway.version>4.2.0</spring-cloud-gateway.version>
+    <spring-cloud-gateway.version>4.3.0</spring-cloud-gateway.version>
     <sonar-maven-plugin.version>5.0.0.4389</sonar-maven-plugin.version>
     <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
     <maven.compiler.target>${java.version}</maven.compiler.target>
     <maven-javadoc-plugin.version>3.11.2</maven-javadoc-plugin.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <poi-ooxml.version>5.3.0</poi-ooxml.version>
+    <poi-ooxml.version>5.4.1</poi-ooxml.version>
     <jacoco-maven-plugin.version>0.8.12</jacoco-maven-plugin.version>
   </properties>
   <dependencyManagement>
     <dependencies>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-gateway</artifactId>
+        <artifactId>spring-cloud-starter-gateway-server-webmvc</artifactId>
+        <version>${spring-cloud-gateway.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-gateway-server-webflux</artifactId>
         <version>${spring-cloud-gateway.version}</version>
       </dependency>
       <dependency>
@@ -106,6 +111,32 @@
   <build>
     <pluginManagement>
       <plugins>
+        <plugin>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <version>${maven-javadoc-plugin.version}</version>
+          <executions>
+            <execution>
+              <id>javadoc</id>
+              <phase>package</phase>
+              <goals>
+                <goal>jar</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <artifactId>maven-source-plugin</artifactId>
+          <version>${maven-source-plugin.version}</version>
+          <executions>
+            <execution>
+              <id>attach-sources</id>
+              <phase>package</phase>
+              <goals>
+                <goal>jar</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
         <plugin>
           <groupId>org.sonarsource.scanner.maven</groupId>
           <artifactId>sonar-maven-plugin</artifactId>
