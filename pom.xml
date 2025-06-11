@@ -28,7 +28,7 @@
 
     <groupId>top.leafage</groupId>
     <artifactId>leafage-starter-parent</artifactId>
-    <version>0.3.4</version>
+    <version>0.3.5</version>
     <packaging>pom</packaging>
     <url>https://www.leafage.top</url>
 
