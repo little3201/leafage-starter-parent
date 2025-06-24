@@ -22,13 +22,13 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.5.0</version>
+        <version>3.5.3</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <groupId>top.leafage</groupId>
     <artifactId>leafage-starter-parent</artifactId>
-    <version>0.3.5</version>
+    <version>0.3.6</version>
     <packaging>pom</packaging>
     <url>https://www.leafage.top</url>
 
@@ -43,9 +43,8 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
 
         <!-- Sonar -->
-        <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
-        <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
-        <sonar.language>java</sonar.language>
+        <sonar.coverage.jacoco.xmlReportPaths>${maven.multiModuleProjectDirectory}/report-aggregate/target/jacoco.exec
+        </sonar.coverage.jacoco.xmlReportPaths>
 
         <!-- Plugins -->
         <maven-javadoc-plugin.version>3.11.2</maven-javadoc-plugin.version>
@@ -270,21 +269,11 @@
                         <artifactId>jacoco-maven-plugin</artifactId>
                         <executions>
                             <execution>
-                                <id>prepare-agent</id>
+                                <id>report-aggregate</id>
+                                <phase>verify</phase>
                                 <goals>
-                                    <goal>prepare-agent</goal>
+                                    <goal>report-aggregate</goal>
                                 </goals>
-                            </execution>
-                            <execution>
-                                <id>report</id>
-                                <goals>
-                                    <goal>report</goal>
-                                </goals>
-                                <configuration>
-                                    <formats>
-                                        <format>XML</format>
-                                    </formats>
-                                </configuration>
                             </execution>
                         </executions>
                     </plugin>
