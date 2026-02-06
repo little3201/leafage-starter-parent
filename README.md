@@ -1,6 +1,6 @@
 <p align="center">
- <img src="https://img.shields.io/badge/Spring%20Boot-4.0.0-green.svg" alt="Downloads">
- <img src="https://img.shields.io/badge/Spring%20Cloud%20Gateway-5.0.0-green.svg" alt="Downloads">
+ <img src="https://img.shields.io/badge/Spring%20Boot-4.0.2-green.svg" alt="Downloads">
+ <img src="https://img.shields.io/badge/Spring%20Cloud%20Gateway-5.0.1-green.svg" alt="Downloads">
 </p>
 
 ### 介绍：

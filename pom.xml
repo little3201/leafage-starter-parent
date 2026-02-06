@@ -22,7 +22,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.0.1</version>
+        <version>4.0.2</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -50,9 +50,9 @@
 
         <central-publishing-maven-plugin.version>0.9.0</central-publishing-maven-plugin.version>
         <jacoco-maven-plugin.version>0.8.14</jacoco-maven-plugin.version>
-        <sonar-maven-plugin.version>5.3.0.6365</sonar-maven-plugin.version>
+        <sonar-maven-plugin.version>5.5.0.6356</sonar-maven-plugin.version>
 
-        <spring-cloud-gateway.version>5.0.0</spring-cloud-gateway.version>
+        <spring-cloud-gateway.version>5.0.1</spring-cloud-gateway.version>
         <poi-ooxml.version>5.5.1</poi-ooxml.version>
     </properties>
 
