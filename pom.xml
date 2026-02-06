@@ -258,7 +258,7 @@
         </profile>
 
         <profile>
-            <id>coverage</id>
+            <id>sonar</id>
             <build>
                 <plugins>
                     <plugin>
